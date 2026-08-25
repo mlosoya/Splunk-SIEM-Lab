@@ -18,11 +18,16 @@ Built a Splunk Enterprise SIEM lab on Windows to practice log ingestion, securit
 ## Steps Performed
 1. Downloaded and installed Splunk Enterprise on Windows
 2. Configured Splunk to monitor local Windows Event Logs
-3. Searched and analyzed 34,456 security events using SPL queries
-4. Searched for failed login attempts using EventCode 4625
-5. Triggered real failed login events by entering wrong passwords
-6. Created a detection alert named Failed Login Attempt Detected triggered when EventCode 4625 results are greater than 0
-7. Built a Security Overview dashboard with two panels showing event counts by type and failed login attempts over time
+3. ![screenshot](screenshots/Screenshot%202026-08-25%20183522.png)
+4. Searched and analyzed 34,456 security events using SPL queries
+5. Searched for failed login attempts using EventCode 4625
+6. ![screenshot](screenshots/Screenshot%202026-08-24%20235716.png)
+7. Triggered real failed login events by entering wrong passwords
+8. Created a detection alert named Failed Login Attempt Detected triggered when EventCode 4625 results are greater than 0
+9. ![screenshot](screenshots/Screenshot%202026-08-25%20000817.png)
+   ![screenshot](screenshots/Screenshot%202026-08-25%20001154.png)
+10. Built a Security Overview dashboard with two panels showing event counts by type and failed login attempts over time
+11. ![screenshot](screenshots/Screenshot%202026-08-25%20001233.png)
 
 ## SPL Queries Used
 - `index=main sourcetype=WinEventLog:Security` — pulls all security events
